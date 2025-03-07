@@ -136,10 +136,10 @@ Redémarrer le SSH avec systemctl restart sshd
 Partie 3 - Analyse du stockage
 
 Q.2.3.1: À partir de la sortie de lsblk, nous voyons les points de montage suivants :
+/boot sur md0p1.
+ / (racine) sur cp3--vg-root.
+Partition SWAP sur cp3--vg-swap_1. 
 
-    /boot sur md0p1 (probablement en ext4 ou xfs).
-    / (racine) sur cp3--vg-root (LVM, probablement formaté en ext4 ou xfs).
-    Partition SWAP sur cp3--vg-swap_1. 
 Q.2.3.2:  RAID 1 (mirroring) : md0 est un volume RAID 1 avec sda1.
 LVM (Logical Volume Manager) : utilisé pour la partition principale (/) et la SWAP.
 Partition standard pour /boot, séparée de LVM.
