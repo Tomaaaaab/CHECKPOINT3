@@ -1,6 +1,6 @@
-Exercice 1 - VM Windows
+# Exercice 1 - VM Windows
 
-Partie 1 - Gestion des utilisateurs
+## Partie 1 - Gestion des utilisateurs
 
 Q.1.1.1
 ![1](https://github.com/user-attachments/assets/83c70b6f-acbd-43fc-ba82-0e1fe6948a18)
@@ -73,13 +73,16 @@ Modification du groupe
 ![Modification du groupe](https://github.com/user-attachments/assets/5dd73ddf-aa42-44d7-bdec-7498018006d6)
 
 
-Partie 2 - Restriction utilisateurs
+## Partie 2 - Restriction utilisateurs
 
 Q.1.2.1 
 
 Restriction horaire utilisateur
+
 ![Capture d’écran 2025-03-07 103857](https://github.com/user-attachments/assets/598e9daa-98a5-4738-9f43-2ae69598ac1d)
+
 ![Modif des horaires](https://github.com/user-attachments/assets/7f04d84a-6e0b-4479-b1ec-5825c1bbe7e7)
+
 ![Recherche de l'usilisateur](https://github.com/user-attachments/assets/adbc3398-b039-448f-bd1b-1cc02d069be3)
 
 
@@ -96,6 +99,7 @@ Q.1.2.3
 Durcissement mot de passe
 
 ![Durcissement de la stragégie de mot de passe](https://github.com/user-attachments/assets/3fdc8a4c-3e18-4e1f-8609-d2a6325affdd)
+
 ![stratégie de mot de passe](https://github.com/user-attachments/assets/db637248-ee30-473c-83c4-f30985c94051)
 
 
@@ -116,24 +120,27 @@ Mappage lecteurs
 
 ![Mappage](https://github.com/user-attachments/assets/9f5d728b-0b5e-4082-b204-d024c87632bd)
 
-Exercice 2 - VM Linux
+# Exercice 2 - VM Linux
 
-Partie 1 - Gestion des utilisateurs
+## Partie 1 - Gestion des utilisateurs
 
 Q.2.1.1: Se connecter directement en root sur la machine et utiliser la commande useradd -m mon_nom, si on est pas en root, utiliser la commande sudo préalablement installée.
+
 Q.2.1.2: Définir un mot de passe fort a l'aire de la commande: passwd mon_nom.
 Limiter le compte à son unique champ d'utilisation.
 Etablir des droits d'accès minimaux. S'assurer que l'utilisateurs créé n'est pas dans les sudoers.
 
-Partie 2 - Configuration de SSH
+## Partie 2 - Configuration de SSH
 
 Q.2.2.1: Modifier le fichier /etc/ssh/sshd_config et écrire no à la ligne PermitRootLogin.
 Redémarrer le SSH avec la commande: systemctl restart sshd
+
 Q.2.2.2 Dans même fichier de configuration sshd_config, ajouter la ligne AllowUsers mon_nom, puis redémarrer le SSH avec systemctl restart sshd
+
 Q.2.2.3 Il faut créer une clef publique SSH avec ssh-keyen puis il faut retourner dans le fichier de configuration sshd_config pour désactiver l'authentification par mot de passe avec la ligne PassworkAuthentification no
 Redémarrer le SSH avec systemctl restart sshd
 
-Partie 3 - Analyse du stockage
+## Partie 3 - Analyse du stockage
 
 Q.2.3.1: À partir de la sortie de lsblk, nous voyons les points de montage suivants :
 /boot sur md0p1.
@@ -153,13 +160,13 @@ Q.2.3.5
 
 ![2 3 5](https://github.com/user-attachments/assets/84b98722-354b-417f-ac70-1d87248bf24b)
 
-Partie 4 - Sauvegardes
+## Partie 4 - Sauvegardes
 
 Q.2.4.1: Director = Gestion des tâches de sauvegarde et restauration.
 Storage Daemon = Responsable du stockage des sauvegardes.
 File Daemon = Agent de sauvegarde sur les machines à protéger. 
 
-Partie 5 - Filtrage et analyse réseau
+## Partie 5 - Filtrage et analyse réseau
 
 Q.2.5.1 
 
@@ -175,7 +182,7 @@ Q.2.5.4
 
 ![2 5 4](https://github.com/user-attachments/assets/623152c9-c702-4659-8eb1-9be86c80f0bf)
 
-Partie 6 - Analyse de logs
+## Partie 6 - Analyse de logs
 
 Q.2.6.1 
 
