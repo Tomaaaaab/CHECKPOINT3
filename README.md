@@ -103,7 +103,7 @@ Durcissement mot de passe
 ![stratégie de mot de passe](https://github.com/user-attachments/assets/db637248-ee30-473c-83c4-f30985c94051)
 
 
-Partie 3 - Lecteurs réseaux
+## Partie 3 - Lecteurs réseaux
 
 
 Q.1.3.1 
